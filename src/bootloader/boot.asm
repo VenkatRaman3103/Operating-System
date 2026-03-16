@@ -108,6 +108,10 @@ wait_key_and_reboot:
     int 16h
     jmp 0FFFFh:0
 
+.halt:
+    cli
+    hlt
+
 ;
 ; LBA -> CHS
 ;
